@@ -8,8 +8,8 @@ import "./App.css";
 
 const openWeatherMapAPI = {
   apiKey: import.meta.env.VITE_WEATHER_API_KEY,
-  url: "http://api.openweathermap.org/data/2.5/",
-  iconUrl: "http://openweathermap.org/img/wn/",
+  url: "https://api.openweathermap.org/data/2.5/",
+  iconUrl: "https://openweathermap.org/img/wn/",
 };
 
 function App() {
@@ -110,7 +110,7 @@ function App() {
   useEffect(() => {
     if (weather) {
       setIcon(
-        `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
+        `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
       );
     }
   }, [weather]);
